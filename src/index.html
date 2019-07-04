@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="strict-origin" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Front End Test - Ricardo Franco</title>
+</head>
+
+<body>
+    <div class="wraper form">
+
+        <div class="alert alert--error border border-danger" id="alert__js--error" role="alert">
+            <i class="far fa-times"></i>
+            <p>Digite seu email e senha</p>
+        </div>
+
+        <div class="alert alert--success border border-success" id="alert__js--success" role="alert">
+            <i class="far fa-check"></i>
+            <p>Você foi logado com sucesso</p>
+        </div>
+        <div class="container form--container">
+            <h2>Entrar na minha conta<i class="fas fa-fish"></i></h2>
+            <form name="login-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="input-email" id="input-email" placeholder="Email">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="input-password" id="input-password" placeholder="Senha">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button type="submit" class="btn btn-primary border border-primary form--btn" onclick="validateForm(event)"
+                    data-hover="Login"><span>Entrar</span></button>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form--check-label" for="exampleCheck1">Mantenha-me conectado</label>
+                </div>
+            </form>
+
+        </div>
+        <p class="form--register">Precisa de uma conta? <a href="#"> Inscrever-se</a></p>
+        <p class="form--forgot">Esqueceu sua senha? <a href="#"> Clique aqui.</a></p>
+        <div class="info">
+            <div class="info--icon">i</div>
+            <div class="info--text">Keyrus</div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/popper.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
